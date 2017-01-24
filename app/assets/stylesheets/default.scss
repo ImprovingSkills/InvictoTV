@@ -1,0 +1,73 @@
+header {
+	& a {
+		text-decoration: none;
+		color: rgba(200,200,200,0.8);
+		&:hover {
+			text-decoration: none;
+			color: rgba(200,200,200,0.8);
+		}
+	}
+	& .first-header {
+		background-color: #231f20;
+		& .logo {
+			height: 140px;
+			& a {
+				& img {
+					top: 50%;
+					left: 50%;
+					zoom: 50%;
+					position: absolute;
+					transform: translate(-50%, -50%);
+				}
+			}
+		}
+		& .search-bar {
+			height: 140px;
+			position: relative;
+			& a {
+				top: 50%;
+				left: 50%;
+				width: 100%;
+				position: absolute;
+				padding-bottom: 8px;
+				transform: translate(-50%, -50%);
+				transition: border-bottom 0.2s ease-out;
+				border-bottom: 1px solid rgba(230,230,230,0.1);
+				&:hover {
+					border-bottom: 1px solid rgba(230,230,230,0.4);
+				}
+			}
+		}
+		& .account-box-base {
+			height: 140px;
+			position: relative;
+			& .account-box {
+				top: 50%;
+				left: 50%;
+				position: absolute;
+				transform: translate(-50%, -50%);
+				& .user-pic {
+	        width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #fff;
+  line-height: 500px;
+  text-align: center;
+  background: #000
+			    & a {
+						color: #6c696a;
+			    }
+				}
+				& .account-managment {
+					& .login {
+					}
+					& .register {
+					}
+				}
+			}
+		}
+	}
+	& .second-header {
+	}
+}

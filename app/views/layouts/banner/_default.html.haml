@@ -1,0 +1,86 @@
+%header
+	.container-fluid
+		.row.first-header
+			.col-xs-3
+				.logo
+					%a{href: "#"}
+						= image_tag('invicto-tv.png')
+			%button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#first-header", "data-toggle" => "collapse", :type => "button"}
+				%span.sr-only Toggle navigation
+				%span.icon-bar
+				%span.icon-bar
+				%span.icon-bar
+			.col-xs-9
+				.collapse.navbar-collapse#first-header
+					.row
+						.col-xs-8
+							.search-bar
+								%a{:href => "#", :class => "glyphicon glyphicon-search"} 
+									click to search
+						.col-xs-4
+							.row
+								.account-box-base
+									.account-box
+										.col-xs-6
+											.user-pic
+												%a.glyphicon.glyphicon-user{:href => "#"}
+										.col-xs-6
+											.account-managment
+												.row
+													.login
+														%a{:href => "#"} Link
+												.row
+													.register
+														or
+														%a{:href => "#"} Link
+		.row.second-header
+			%button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#second-header", "data-toggle" => "collapse", :type => "button"}
+				%span.sr-only Toggle navigation
+				%span.icon-bar
+				%span.icon-bar
+				%span.icon-bar
+			.col-xs-12
+				.collapse.navbar-collapse#second-header
+					.row
+						.col-xs-9
+							%ul.nav.navbar-nav
+								%li
+									%a{"data-toggle" => "pill", :href => "#"}
+										Inicio
+								%li
+									%a{"data-toggle" => "pill", :href => "#"} Noticias
+								%li.dropdown
+									%a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+										Deportes
+										%span.caret
+									%ul.dropdown-menu
+										%li
+											%a{:href => "#"} Deporte Locote y así
+								%li
+									%a{"data-toggle" => "pill", :href => "#"} Galería
+								%li
+									%a{"data-toggle" => "pill", :href => "#"} Agenda
+									%ul.nav.navbar-nav
+								%li.dropdown
+									%a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+										Universidades
+										%span.caret
+									%ul.dropdown-menu
+										%li
+											%a{:href => "#"} Action
+								%li
+									%a{"data-toggle" => "pill", :href => "#"} Muro
+								%li
+									%a{"data-toggle" => "pill", :href => "#"} Crea tu galería
+						.col-xs-3
+							%ul.nav.navbar-nav.navbar-right.social
+								%li
+									%a{:class => "social-icon socicon-twitter"}
+								%li
+									%a{:class => "social-icon socicon-youtube"}
+								%li
+									%a{:class => "social-icon socicon-facebook"}
+								%li
+									%a{:class => "social-icon socicon-instagram"}
+								%li
+									%a{:class => "social-icon socicon-rss"}
