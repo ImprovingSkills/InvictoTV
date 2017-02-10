@@ -1,73 +1,94 @@
 header {
+	line-height: 140px;
+	background-color: #231f20;
 	& a {
-		text-decoration: none;
 		color: rgba(200,200,200,0.8);
+		&:focus,
 		&:hover {
-			text-decoration: none;
 			color: rgba(200,200,200,0.8);
 		}
 	}
-	& .first-header {
-		background-color: #231f20;
-		& .logo {
-			height: 140px;
-			& a {
-				& img {
-					top: 50%;
-					left: 50%;
-					zoom: 50%;
-					position: absolute;
-					transform: translate(-50%, -50%);
-				}
-			}
-		}
-		& .search-bar {
-			height: 140px;
-			position: relative;
-			& a {
-				top: 50%;
-				left: 50%;
-				width: 100%;
-				position: absolute;
-				padding-bottom: 8px;
-				transform: translate(-50%, -50%);
-				transition: border-bottom 0.2s ease-out;
-				border-bottom: 1px solid rgba(230,230,230,0.1);
-				&:hover {
-					border-bottom: 1px solid rgba(230,230,230,0.4);
-				}
-			}
-		}
-		& .account-box-base {
-			height: 140px;
-			position: relative;
-			& .account-box {
-				top: 50%;
-				left: 50%;
-				position: absolute;
-				transform: translate(-50%, -50%);
-				& .user-pic {
-	        width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  font-size: 50px;
-  color: #fff;
-  line-height: 500px;
-  text-align: center;
-  background: #000
-			    & a {
-						color: #6c696a;
-			    }
-				}
-				& .account-managment {
-					& .login {
-					}
-					& .register {
-					}
-				}
+	& .logo {
+		text-align: center;
+		& a {
+			& img {
+				zoom: 50%;
+		    display: inline-block;
 			}
 		}
 	}
-	& .second-header {
+	& .search-bar {
+		& a {
+			width: 100%;
+			padding-bottom: 8px;
+			transition: border-bottom 0.2s ease-out;
+			border-bottom: 1px solid rgba(230,230,230,0.1);
+			&:hover {
+				border-bottom: 1px solid rgba(230,230,230,0.4);
+			}
+		}
+	}
+	& .user-box {
+		height: 100%;
+		& .user-info {
+			width: 100%;
+			transform: translateX(25%);
+			& .user-pic {
+				margin-right: 10px;
+		    & a {
+					color: #6c696a;
+			    border: solid 1px;
+			    border-radius: 50%;
+			    line-height: 0;
+  				padding: 21px 14px;
+			    display: inline-block;
+		    }
+		    & img {
+		    	border: solid 1px;
+		    	max-height: 44.02px
+		    }
+		  }
+			& .account-managment {
+				display: inline;
+				& .options {
+					line-height: 1;
+					display: inline-block;
+					vertical-align: middle;
+					&.unlogged {
+						margin-top: -10px;
+					}
+					& .login {
+						& a {
+					    font-size: 14px;
+							color: #fff;
+							font-weight: bold;
+						}
+					}
+					& .register {
+	    			transform: translateY(5px);
+	    			position:relative;
+						z-index:1000;
+						& a {
+					    transition: color .3s linear;
+					    font-size: 12px;
+					    margin-right: 10px; 
+							&:hover {
+								color: #fff;
+							}
+							& span {
+								text-decoration: underline;
+							}
+						}
+						& .profile-signout {
+					    padding: 0;
+   						list-style: none;
+							& a {
+						    margin-right: 10px; 
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }

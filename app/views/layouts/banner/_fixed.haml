@@ -1,0 +1,54 @@
+.container-fluid
+	.row.fixed-header
+		%button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#second-header", "data-toggle" => "collapse", :type => "button"}
+			%span.sr-only Toggle navigation
+			%span.icon-bar
+			%span.icon-bar
+			%span.icon-bar
+		.collapse.navbar-collapse#second-header
+			.row
+				.col-xs-9
+					%ul.nav.navbar-nav
+						%li
+							%a.fixed-logo.hidden{href: "#"}
+								= image_tag('invicto-tv.png')
+						%li
+							= link_to "Inicio", root_path 
+						%li
+							%a{"data-toggle" => "pill", :href => "#"} Noticias
+						%li.dropdown
+							%a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+								Deportes
+								%span.caret
+							%ul.dropdown-menu
+								%li
+									%a{:href => "#"} Deporte Locote y así
+						%li
+							%a{"data-toggle" => "pill", :href => "#"} Galería
+						%li
+							%a{"data-toggle" => "pill", :href => "#"} Agenda
+							%ul.nav.navbar-nav
+						%li.dropdown
+							%a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+								Universidades
+								%span.caret
+							%ul.dropdown-menu
+								%li
+									%a{:href => "#"} Action
+						%li
+							%a{"data-toggle" => "pill", :href => "www.facebook.com"} Muro
+						%li
+							%a{"data-toggle" => "pill", :href => "#"} Crea tu galería
+				.col-xs-3
+					%ul.nav.navbar-nav.navbar-right.social
+						%li
+							%a{:class => "social-icon socicon-twitter", :href => "http://twitter.com/invicto_tv", :target => "blank"}
+						%li
+							%a{:class => "social-icon socicon-youtube", :href => "https://www.youtube.com/user/invictotelevision", :target => "blank"}
+						%li
+							%a{:class => "social-icon socicon-facebook", :href => "https://www.facebook.com/Invicto.tv/", :target => "blank"}
+						%li
+							%a{:class => "social-icon socicon-instagram", :href => "http://www.instagram.com/invictotv/", :target => "blank"}
+						%li
+							%a{:class => "social-icon socicon-rss", :href => "http://invictotv.com/feed/", :target => "blank"}
+

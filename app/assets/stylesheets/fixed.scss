@@ -1,0 +1,66 @@
+.fixed-header {
+	&.fixed {
+		position: fixed;
+	  width: 100%;
+	  transform: translateY(-140px);
+	}
+	& a {
+		color: #231F20;
+		transition: color .3s linear;
+		&.fixed-logo {
+			padding-top: 10px;
+			padding-left: 0px;
+			& img {
+				zoom: 50%;
+			}
+		}
+		&:active{
+			color: #795300;
+		}
+		&:hover {
+			color: #795300;
+		}
+		&:focus {
+			color: #795300;
+		}
+	}
+	& .social {
+		margin: 0;
+		& li { 
+			& a {
+				color: #795300;
+				border: solid 2px;
+				border-radius: 50%;
+				line-height: 0;
+				padding: 8px 9px 13px 9px;
+				margin-left: 5px;
+				margin-top: 10px;
+				&.socicon-twitter {
+					&:hover {
+						color: #00A0D1;
+					}
+				}
+				&.socicon-youtube {
+					&:hover {
+						color: #C4302B;
+					}
+				}
+				&.socicon-facebook {
+					&:hover {
+						color: #3B5998;
+					}
+				}
+				&.socicon-instagram {
+					&:hover {
+						color: #3f729b;
+					}
+				}
+				&.socicon-rss {
+					&:hover {
+						color: #EE802F;
+					}
+				}
+			}
+		}
+	}
+}

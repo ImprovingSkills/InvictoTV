@@ -13,6 +13,12 @@ gem 'simple_form'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'country_select'
 gem 'socicon-rails'
+gem 'therubyracer'
+gem 'koala'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'rack-cors', :require => 'rack/cors'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
