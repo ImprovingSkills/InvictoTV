@@ -1,0 +1,21 @@
+ul display: inline;	
+list-style: none;
+padding: 0;
+
+li
+  display: inline-block;
+invictolink
+	    color: #795300;
+    font-weight: bold;
+    transition: color .3s linear;
+    hover {
+    	color: #C4960C;
+    }
+
+@
+  color: #999;
+
+follow
+display: inline-block;
+    vertical-align: top;
+    margin-left: 26px;

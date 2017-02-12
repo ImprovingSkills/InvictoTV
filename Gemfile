@@ -17,6 +17,7 @@ gem 'therubyracer'
 gem 'koala'
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'instagramjs-rails'
 gem 'rack-cors', :require => 'rack/cors'
 
 

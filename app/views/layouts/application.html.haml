@@ -4,8 +4,11 @@
 		%title InvictoTV
 		= csrf_meta_tags
 		= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+		= favicon_link_tag       'favicon.ico'
 		= javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+		= javascript_include_tag '//platform.twitter.com/widgets.js', 'async': 'true'
 	%body
-		= render partial: 'layouts/banner/default'
-		= render partial: 'layouts/banner/fixed'
+		= render partial: 'layouts/headers/default_header'
+		= render partial: 'layouts/headers/fixed_header'
 		= yield
+		= render partial: 'layouts/footers/default_footer'

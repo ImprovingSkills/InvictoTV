@@ -5,7 +5,7 @@ $(document).ready(function() {
       $(".fixed-header").addClass("fixed");
       $(".fixed-logo").removeClass("hidden");
     } else {
-      $(".fixed-header").remove	Class("fixed");
+      $(".fixed-header").removeClass("fixed");
       $(".fixed-logo").addClass("hidden");
     }
 	});

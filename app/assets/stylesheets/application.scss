@@ -11,14 +11,15 @@
  * It is generally better to create a new file per style scope.
  */
 
+$header_height: 140px;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "socicon";
-
 @import "general";
-@import "default";
-@import "fixed";
+@import "default_footer";
+@import "default_header";
+@import "fixed_header";
 
-$header_height: 140px;
 
 

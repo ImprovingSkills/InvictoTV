@@ -1,0 +1,20 @@
+#fb-root
+#twitter-wjs	
+.container-fluid
+	.row
+		.col-xs-3
+			.fb-page{"data-adapt-container-width" => "true", "data-height" => "400", "data-hide-cover" => "false", "data-href" => "https://www.facebook.com/Invicto.tv/", "data-show-facepile" => "true", "data-small-header" => "false", "data-tabs" => "timeline,events,messages", "data-width" => "5000"}
+				%blockquote.fb-xfbml-parse-ignore{:cite => "https://www.facebook.com/Invicto.tv/"}
+					%a{:href => "https://www.facebook.com/Invicto.tv/"} Invicto Televisión
+		.col-xs-3
+			%ul
+				%li
+					%a{:href => "https://twitter.com/invicto_tv"}	InvictoTv
+				%li		
+					@invicto_tv
+				%li
+					%a.twitter-follow-button{:href => "https://twitter.com/invicto_tv", "data-show-screen-name" => "false"}
+			%a.twitter-timeline{"data-height" => "400", "data-link-color" => "#C4960C", :href => "https://twitter.com/invicto_tv", "data-chrome" =>"nofooter noheader"}
+		.col-xs-3
+
+		.col-xs-3

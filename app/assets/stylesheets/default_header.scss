@@ -1,5 +1,5 @@
 header {
-	line-height: 140px;
+	line-height: $header_height;
 	background-color: #231f20;
 	& a {
 		color: rgba(200,200,200,0.8);

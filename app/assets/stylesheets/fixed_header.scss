@@ -1,8 +1,10 @@
 .fixed-header {
+	background-color: #fff;
+	z-index: 1;
 	&.fixed {
 		position: fixed;
 	  width: 100%;
-	  transform: translateY(-140px);
+	  transform: translateY(-$header_height);
 	}
 	& a {
 		color: #231F20;
