@@ -13,7 +13,7 @@
 
 $header_height: 140px;
 $fixed_header_height: 50px;
-$total_height: $header_height + $fixed_header_height;
+$total_height: calc(#{$header_height} + #{$fixed_header_height});
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -23,3 +23,8 @@ $total_height: $header_height + $fixed_header_height;
 @import "default_footer";
 @import "default_header";
 @import "default_fixed_header";
+
+.section {
+	min-height: calc(100vh - #{$fixed_header_height});
+	position: relative;
+}

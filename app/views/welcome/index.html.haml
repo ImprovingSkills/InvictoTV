@@ -2,7 +2,48 @@
 	.gradient
 .section
 	.container-fluid
+		.title
+			%h2.text-center
+				Lo más destacado
+		.row
+			- 4.times do
+				.col-xs-3
+					.post-preview
+						.post-image
+							=image_tag('test-img.jpeg')
+						.post-author
+							Fonseca
+						.post-title
+							Dojo de Karate-Do UCV brilla en el 3er. Open Shoto Cup Venezuela 2017
+						.post-info
+							3 días ago / 5 views
 		.row
 			.col-xs-12
 				.banner-chacao
+					.container
+						.chacao-text
+							.title
+								%h1
+									Dirección Deportes Chacao
+							.subtitle
+								%h5
+									Chacao nos une
+							.visit-us
+								%a.btn.btn-visit-us{:href => "http://chacao.gob.ve/?vivo=994-deporte"}
+									Visítanos
+									%i.glyphicon.glyphicon-menu-right
 					= image_tag('banner_chacao.png')
+.section
+	.container-fluid
+		.row
+			.col-xs-6
+				%h2		
+					Editorial Invicto Tv
+				%h5
+					No te los pierdas
+				%h1
+					No es sólo deporte, es un estilo de vida
+				%p
+					Nosotros en InvictoTv hemos decidido dedicarle este espacio al Rugby, un deporte que está creciendo en Venezuela y cuyo espíritu de juego va más allá de la cancha, donde la victoria es un momento circunstancial  y lo más importante es la cordialidad, la amistad y el respeto para todos los participantes. Leer más
+			.col-xs-6
+				=image_tag('test-img.jpeg')

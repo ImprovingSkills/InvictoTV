@@ -1,6 +1,6 @@
 .parallax {
   background-image: url("welcome_bg.jpg");
-  height: 100vh; 
+  height: calc(100vh + #{$fixed_header_height}); 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -9,13 +9,77 @@
     background: #795300;
     background: linear-gradient(to right, #795300 0%, #231F20 0%,#795300 100%,#231F20 100%);
     opacity:0.85;
-    height: 100vh;
+    height: calc(100vh + #{$fixed_header_height});
   }  
 }
 .section {
+  & .post-preview {
+    & .post-image {
+      height: 170px;
+      & img {
+        max-height: 100%;
+        width: 100%;
+        border-radius: 5px;
+      }
+    }
+  }
   & .banner-chacao {
-    width: 95%;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    & .chacao-text {
+      padding-top: 3%;
+      position: absolute;
+      color: #fff;
+      & .title {
+        & h1 {
+          &:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 2px;
+            background: rgba(230,230,230,0.5);
+            position: absolute;
+            bottom: 0px;
+          }
+        }
+      }
+      & .subtitle {
+        position: absolute;
+        margin-top: 5%;
+      }
+      & .visit-us {
+        position: absolute;
+        margin-top: 15%;
+        & .btn-visit-us {
+          background-color: #f68b45;
+          border-color: #f68b45;
+          display: inline-block;
+          height: 30px;
+          white-space: nowrap;
+          line-height: 30px;
+          text-align: center;
+          padding: 0 15px;
+          color: inherit;
+          font-size: 13px;
+          font-style: italic;
+          overflow: hidden;
+          position: relative;
+          transition: all 0.3s ease-in-out;
+          border-radius: 0px;
+          &:hover {
+            padding: 0 40px 0 20px;
+            & i {
+              opacity: 1;
+              margin-top: 6px;
+            }
+          }
+          & i {
+            opacity: 0;
+            position: absolute;
+            margin-top: -20px;
+            margin-left: 15px;
+            transition: opacity 0.2s ease-out, margin-top 0.2s ease-out;
+          }
+        }
+      }
+    }
   }
 }

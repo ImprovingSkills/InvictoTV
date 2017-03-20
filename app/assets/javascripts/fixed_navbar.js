@@ -3,10 +3,10 @@ $(document).ready(function() {
     var scroll = $(window).scrollTop();
     if (scroll > 140) {
       $(".fixed-header").addClass("fixed");
-      $(".fixed-logo").removeClass("hidden");
+      $(".fixed-logo").removeClass("invisible");
     } else {
       $(".fixed-header").removeClass("fixed");
-      $(".fixed-logo").addClass("hidden");
+      $(".fixed-logo").addClass("invisible");
     }
 	});
 });
