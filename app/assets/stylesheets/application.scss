@@ -12,14 +12,14 @@
  */
 
 $header_height: 140px;
+$fixed_header_height: 50px;
+$total_height: $header_height + $fixed_header_height;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "socicon";
 @import "general";
+@import "welcome";
 @import "default_footer";
 @import "default_header";
-@import "fixed_header";
-
-
-
+@import "default_fixed_header";

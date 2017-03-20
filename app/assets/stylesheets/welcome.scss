@@ -1,3 +1,21 @@
-// Place all the styles related to the Welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.parallax {
+  background-image: url("welcome_bg.jpg");
+  height: 100vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  & .gradient {
+    background: #795300;
+    background: linear-gradient(to right, #795300 0%, #231F20 0%,#795300 100%,#231F20 100%);
+    opacity:0.85;
+    height: 100vh;
+  }  
+}
+.section {
+  & .banner-chacao {
+    width: 95%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}

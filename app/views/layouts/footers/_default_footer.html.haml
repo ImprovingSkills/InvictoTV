@@ -1,20 +1,46 @@
+%hr
 #fb-root
-#twitter-wjs	
-.container-fluid
-	.row
-		.col-xs-3
-			.fb-page{"data-adapt-container-width" => "true", "data-height" => "400", "data-hide-cover" => "false", "data-href" => "https://www.facebook.com/Invicto.tv/", "data-show-facepile" => "true", "data-small-header" => "false", "data-tabs" => "timeline,events,messages", "data-width" => "5000"}
-				%blockquote.fb-xfbml-parse-ignore{:cite => "https://www.facebook.com/Invicto.tv/"}
-					%a{:href => "https://www.facebook.com/Invicto.tv/"} Invicto Televisión
-		.col-xs-3
-			%ul
-				%li
-					%a{:href => "https://twitter.com/invicto_tv"}	InvictoTv
-				%li		
-					@invicto_tv
-				%li
-					%a.twitter-follow-button{:href => "https://twitter.com/invicto_tv", "data-show-screen-name" => "false"}
-			%a.twitter-timeline{"data-height" => "400", "data-link-color" => "#C4960C", :href => "https://twitter.com/invicto_tv", "data-chrome" =>"nofooter noheader"}
-		.col-xs-3
-
-		.col-xs-3
+#twitter-wjs
+.section
+	.container-fluid
+		.row
+			.col-xs-3
+				.facebook
+					.fb-page{"data-adapt-container-width" => "true", "data-height" => "400", "data-hide-cover" => "false", "data-href" => "https://www.facebook.com/Invicto.tv/", "data-show-facepile" => "true", "data-small-header" => "false", "data-tabs" => "timeline,events,messages", "data-width" => "5000"}
+						%blockquote.fb-xfbml-parse-ignore{:cite => "https://www.facebook.com/Invicto.tv/"}
+							%a{:href => "https://www.facebook.com/Invicto.tv/"} Invicto Televisión
+			.col-xs-3
+				.twitter
+					%ul.twitter-head
+						%li.acc-link
+							%a{:href => "https://twitter.com/invicto_tv"}	InvictoTv
+						%li.acc-name
+							@invicto_tv
+						%li.acc-button
+							%a.twitter-follow-button{:href => "https://twitter.com/invicto_tv", "data-show-screen-name" => "false"}
+					%a.twitter-timeline{"data-height" => "370", "data-link-color" => "#C4960C", :href => "https://twitter.com/invicto_tv", "data-chrome" =>"nofooter noheader"}
+			.col-xs-3
+				.instagram
+			.col-xs-3
+				.youtube
+		.row
+			.copyright-about
+				.col-xs-6
+					.disclaimer
+						%span
+							© INVICTO TV - Todos los derechos resevados 2016.
+				.col-xs-6
+					.about-us
+						%ul.nav.navbar-nav.navbar-right
+							%li
+								%a{:href => "https://twitter.com/invicto_tv"} Acerca de Nosotros
+							%li
+								%span
+									|
+							%li 
+								%a{:href => "https://twitter.com/invicto_tv"} Términos de uso
+							%li
+								%span
+									|
+							%li 
+								%a{:href => "https://twitter.com/invicto_tv"} Contáctanos

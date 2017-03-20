@@ -1,21 +1,55 @@
-ul display: inline;	
-list-style: none;
-padding: 0;
-
-li
-  display: inline-block;
-invictolink
-	    color: #795300;
-    font-weight: bold;
-    transition: color .3s linear;
-    hover {
-    	color: #C4960C;
+.section {
+  & .twitter {
+    & .blockquote.twitter-tweet {
+      p {
+        font: normal 18px/24px Georgia, "Times New Roman", Palatino, serif;
+        margin: 0 5px 10px 0;
+      }
     }
-
-@
-  color: #999;
-
-follow
-display: inline-block;
-    vertical-align: top;
-    margin-left: 26px;
+    & .twitter-head { 
+      display: inline;  
+      list-style: none;
+      padding: 0;
+      & li {
+        display: inline-block;
+        &.acc-link {
+          & a {
+            color: #795300;
+            font-weight: bold;
+            transition: color .3s linear;
+            &:hover,
+            &:focus {
+             color: #C4960C;
+            }
+          }
+        }
+        &.acc-name {
+          color: #999;
+        }
+        &.acc-button {
+          vertical-align: top;
+          margin-left: 26px;
+        }
+      }
+    }
+  }
+  & .copyright-about {
+    & .disclaimer {
+      transform: translateY(15px);  
+      position: absolute;
+    }
+    & .about-us {
+      & a {
+        color: #795300;
+        transition: color .3s linear;
+        &:hover,
+        &:focus {
+         color: #C4960C;
+        }
+      }
+      & span {
+        line-height: 50px;
+        font-size: 17px;
+      }
+    }}
+}

@@ -1,5 +1,5 @@
 window.onload = function(){ 
-	facebook(document, 'script', 'facebook-jssdk')
+	facebook(document, 'script', 'facebook-jssdk');
 	window.twttr = (function(d, s, id) {
 	  var js, fjs = d.getElementsByTagName(s)[0],
 	    t = window.twttr || {};

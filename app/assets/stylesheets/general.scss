@@ -1,14 +1,13 @@
-body {
-	height: 1000px;
-}
-
 a:hover,
 a:focus {
   text-decoration: none;
 }
-
 input:-webkit-autofill,
 input:focus:-webkit-autofill {
   box-shadow: inset 300px 300px #fff;
   -webkit-text-fill-color: #333;
+}
+.section {
+	padding-left: 20px;
+	padding-right: 20px;
 }
